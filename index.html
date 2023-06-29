@@ -25,16 +25,23 @@
 </head>
 
 <body>
-    <section class="content">
-        <h1>Pokédex</h1>
+    <header class="cabecalho">
+        <a href="https://www.pokemon.com/br/pokedex/" target="_blank">
+            <img src="assets/img/pokemon-logo.png" alt="logo pokemon">
+        </a>
+        <button class="alterar-tema" onclick="alterarTema()">
+            <img src="assets/img/lua-cheia.png" alt="icone de sol">
+        </button>
+    </header>
 
+    <section class="content">
         <ol class="pokemons">
             <!--Pokemons here-->        
         </ol>
 
         <div class="pagination">
             <button id="loadingMoreButton" type="button">
-                Load more
+                Carregar +
             </button>
         </div>
     

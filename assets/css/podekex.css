@@ -70,7 +70,38 @@
     background-color: #f9aec7;
 }
 
-.pagination{
+header.cabecalho {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 25px;
+}
+
+header.cabecalho button.alterar-tema {
+    border: none;
+    background: transparent;
+    transition: all .8s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header.cabecalho button.alterar-tema:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+header.cabecalho button.alterar-tema img {
+    width: 2.3rem;
+}
+
+header.cabecalho a img {
+    width: 150px;
+}
+
+.pagination {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,17 +109,21 @@
     padding: 1rem;
     width: 100%;
 }
-.pagination #loadingMoreButton{
+
+.pagination #loadingMoreButton {
     color: #fff;
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
-    padding: .25rem .5rem;
-    font-size: .8rem;
+    padding: .28rem .8rem;
+    font-size: .9rem;
     cursor: pointer;
+    transition: all .5s ease;
 }
 
-
+.pagination #loadingMoreButton:hover {
+    transform: scale(1.2);
+}
 
 ol.pokemons {
     padding: 0;
